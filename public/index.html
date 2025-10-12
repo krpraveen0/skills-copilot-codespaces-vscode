@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Blog - Auto-generated content from trending topics">
+    <title>Tech Blog - Trending Technology News</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🚀 Tech Blog</h1>
+            <p class="subtitle">Auto-generated content from trending tech topics</p>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="trends">Trending Topics</button>
+            <button class="tab-btn" data-tab="posts">Generated Posts</button>
+            <button class="tab-btn" data-tab="publish">Auto-Post</button>
+        </nav>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <!-- Trends Tab -->
+        <section id="trends-tab" class="tab-content active">
+            <div class="section-header">
+                <h2>📈 Trending Tech Topics</h2>
+                <button id="refresh-trends" class="btn btn-primary">Refresh Trends</button>
+            </div>
+            <div id="trends-list" class="card-grid">
+                <!-- Trends will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Posts Tab -->
+        <section id="posts-tab" class="tab-content">
+            <div class="section-header">
+                <h2>📝 Generated Blog Posts</h2>
+                <button id="generate-posts" class="btn btn-primary">Generate Posts</button>
+            </div>
+            <div id="posts-list" class="card-grid">
+                <!-- Generated posts will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Publish Tab -->
+        <section id="publish-tab" class="tab-content">
+            <div class="section-header">
+                <h2>🌐 Auto-Post to Platforms</h2>
+            </div>
+            <div class="publish-section">
+                <div id="platforms-status" class="platforms-grid">
+                    <!-- Platform status will be loaded here -->
+                </div>
+                <div id="publish-form" class="publish-form">
+                    <p class="info-text">Select a post and platforms to publish</p>
+                </div>
+                <div id="publish-results" class="publish-results hidden">
+                    <!-- Publishing results will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Tech Blog - Powered by SERP API & Auto-posting</p>
+        </footer>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
